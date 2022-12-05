@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/encryption.css">
+
+  <title>Encryption</title>
+</head>
+<header class="header">
+  <div>
+    <a><img class="logo" src="../static/images/logo.png" /></a>
+  </div>
+  <h5 class="glow" style="font-size: 3.5vw; font-family: Times New Roman, Times, serif; color:wheat">INDIAN REGIONAL
+    LANGUAGES </h5>
+  <h5 class="glow" style="font-size: 3.5vw;font-family: Times New Roman, Times, serif; color:wheat">ENCRYPTER</h5>
+  <style>
+    .glow {
+      font-size: 2vw;
+      color: #fff;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(137, 106, 249), 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0
+      }
+
+      to {
+        text-shadow: 0 0 20px rgb(88, 86, 86), 0 0 30px #535152, 0 0 40px #ededed, 0 0 50px #ffffff, 0 0 60px #0
+      }
+    }
+  </style>
+  <h2 class="heading2" style="font-size: 3vw;">Lets try an example how encryption works using our software!!!!</h2>
+</header>
+
+<body>
+  <div class="step1">
+    <!-- <p class="stepheading"> Step-1 Give some input in form of txt file or write a message in the the text box.</p>
+    <div class="choosefile">
+      <form action="/action_page.php">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit">
+      </form>
+    </div> -->
+
+    <!-- <div class="textfiled">
+      <form action="{{url_for('getText')}}" method="post">
+        <label for="text">Enter the text you want </label>
+        <html lang="mr" xml:lang="">
+        <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text">
+              </textarea>
+
+        </html>
+        <input type="submit" value="Submit">
+      </form>
+
+    </div> -->
+
+
+    <!-- <p class="stepheading"> Encrypted message</p>
+    <div class="choosefile">
+      <form action="/action_page.php">
+        <label for="myfile"></label>
+      </form>
+    </div>
+
+    <p id="encrypted12">
+
+    </p> -->
+
+    <!-- <div class="container"> -->
+
+    <!-- <div class="stp1"> -->
+
+    <!-- <p class="stepheading"> Decrypted Message</p>
+        <div class="choosefile">
+        </div> -->
+
+    <!-- <div class="textfiled">
+      <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text">
+
+
+          </textarea>
+
+    </div> -->
+
+    <div class="textfiled">
+      <label for="text">Encrypted Text: </label>
+      <html lang="mr" xml:lang="">
+      <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text">{{encryptText}}</textarea>
+
+      </html>
+      <!-- <input type="submit" value="Submit"> -->
+    </div>
+    <div class="textfiled">
+      <form action="{{url_for('getText')}}" method="post">
+        <label for="text">Enter the text you want </label>
+        <html lang="mr" xml:lang="">
+        <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text"></textarea>
+
+        </html>
+        <!-- <br>
+        <label for="key">Enter Key: </label>
+        <input type="text">
+        <br> -->
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+    <p class="stepheading"> Step-1 Give some input in form of txt file or write a message in the the text box.</p>
+    <div class="choosefile">
+      <form action="{{url_for('uploader')}}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" />
+      </form>
+    </div>
+
+
+    <!-- </div>
+    </div> -->
+
+  </div>
+
+  <div class="step1">
+    <!-- <p class="stepheading"> Step-1 Give some input in form of txt file or write a message in the the text box.</p>
+        <div class="choosefile">
+          <form action="/action_page.php">
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit">
+          </form>
+        </div> -->
+
+    <!-- <div class="textfiled">
+          <form action="{{url_for('getText')}}" method="post">
+            <label for="text">Enter the text you want </label>
+            <html lang="mr" xml:lang="">
+            <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text">
+                  </textarea>
+    
+            </html>
+            <input type="submit" value="Submit">
+          </form>
+    
+        </div> -->
+
+
+    <!-- <p class="stepheading"> Encrypted message</p>
+        <div class="choosefile">
+          <form action="/action_page.php">
+            <label for="myfile"></label>
+          </form>
+        </div>
+    
+        <p id="encrypted12">
+    
+        </p> -->
+
+    <!-- <div class="container"> -->
+
+    <!-- <div class="stp1"> -->
+
+    <!-- <p class="stepheading"> Decrypted Message</p>
+            <div class="choosefile">
+            </div> -->
+
+    <!-- <div class="textfiled">
+          <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text">
+    
+    
+              </textarea>
+    
+        </div> -->
+    <div class="textfiled">
+      <label for="text">Decrypted Text: </label>
+      <html lang="mr" xml:lang="">
+      <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text">{{decryptText}}</textarea>
+
+      </html>
+      <!-- <input type="submit" value="Submit"> -->
+    </div>
+    <div class="textfiled">
+      <form action="{{url_for('getDeText')}}" method="post">
+        <label for="text">Enter the Cipher text </label>
+        <html lang="mr" xml:lang="">
+        <textarea style="height:5vw;width:25vw;font-family:Mangal" name="text"></textarea>
+
+        </html>
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+
+    <!-- </div>
+        </div> -->
+
+  </div>
+  <script type="text/javascript" src="{{url_for('static', filename='index1.js')}}"></script>
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+  <!-- <script>
+      document.getElementById("encrypted12").innerHTML = "New text!";
+    </script> -->
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2022 All Rights Reserved. Design by <a> Yash kalam </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

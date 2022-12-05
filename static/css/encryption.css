@@ -1,0 +1,87 @@
+body{
+    
+    text-align: center;
+}
+.header{
+    background-color: #1d0367;
+    padding-bottom: 100px;
+}
+.logo{
+    text-align: center;
+    margin-top: -2vw !important;
+    border: #fff solid 2px;
+    max-width: 12vw;
+    padding: 20px 0 28px 0;
+    margin: 0 auto;
+}
+
+
+.heading2{
+    font-size: 1vw;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    color: antiquewhite;
+     font-size: 4vw; font-family:  serif; color:wheat;
+}
+.step1{
+    text-align: center;
+    background-color: lightgrey;
+    width: 80vw;
+    border: 15px solid rgb(0, 4, 128);
+    padding: 30px;
+    margin: 20px;   
+    display: inline-block;
+}
+.stepheading{
+    text-align: center;
+    font-size: 2vw;
+}
+.choosefile{
+    font-size: 1.5vw;
+    
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    height: 7vw;
+    border: 15px solid rgb(0, 6, 128);
+    padding: 30px;
+    margin: 20px;
+    float: left;
+}
+.textfiled{
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    width: 30vw;
+    height: 7vw;
+    border: 15px solid rgb(0, 28, 128);
+    padding: 30px;
+    margin: 20px;
+    float: right;
+}
+input{
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 100px;
+    padding-bottom: 10px;
+    background: #fbfdfd;
+}
+
+.copyright p {
+    color: #292929;
+    font-size: 1.5vw;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: normal;
+    padding-right: 0 !important;
+}
+
+.copyright a {
+    color: #292929;
+}
+
+.copyright a:hover {
+    color: #37139a;
+}
